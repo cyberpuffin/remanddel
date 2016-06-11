@@ -150,6 +150,14 @@ nav a.router-link-active {
   font-family: 'Satisfy', cursive;
 }
 
+.slider .indicators .indicator-item.active {
+  background-color: #795548 !important;
+}
+
+.slider .indicators .indicator-item {
+  background-color: #FFFFFF !important;
+}
+
 /* everywhere else */
 * {
   font-family: Arial, Helvetica, sans-serif;
