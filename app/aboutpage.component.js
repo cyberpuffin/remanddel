@@ -12,10 +12,6 @@ var core_1 = require('@angular/core');
 var AboutpageComponent = (function () {
     function AboutpageComponent() {
     }
-    AboutpageComponent.prototype.ngAfterViewInit = function () {
-        $('.carousel').carousel();
-        //$('.slider').slider({full_width: true});
-    };
     AboutpageComponent = __decorate([
         core_1.Component({
             selector: 'aboutpage',
