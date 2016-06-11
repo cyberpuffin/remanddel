@@ -9,24 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var homepage_component_1 = require('./homepage.component');
-var aboutpage_component_1 = require('./aboutpage.component');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.page = 'home';
+var HomepageComponent = (function () {
+    function HomepageComponent() {
     }
-    AppComponent.prototype.setPage = function (newPage) {
-        this.page = newPage;
-    };
-    AppComponent = __decorate([
+    HomepageComponent = __decorate([
         core_1.Component({
-            selector: 'main',
-            templateUrl: 'templates/main.html',
-            directives: [homepage_component_1.HomepageComponent, aboutpage_component_1.AboutpageComponent]
+            selector: 'homepage',
+            templateUrl: 'templates/homepage.html',
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], HomepageComponent);
+    return HomepageComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.HomepageComponent = HomepageComponent;
+//# sourceMappingURL=homepage.component.js.map
