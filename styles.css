@@ -146,6 +146,10 @@ nav a.router-link-active {
   opacity: 0.7;
 }
 
+.cursive {
+  font-family: 'Satisfy', cursive;
+}
+
 /* everywhere else */
 * {
   font-family: Arial, Helvetica, sans-serif;
