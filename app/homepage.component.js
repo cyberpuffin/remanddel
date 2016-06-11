@@ -12,6 +12,10 @@ var core_1 = require('@angular/core');
 var HomepageComponent = (function () {
     function HomepageComponent() {
     }
+    HomepageComponent.prototype.ngAfterViewInit = function () {
+        //$('.carousel').carousel();
+        $('.slider').slider({ full_width: true });
+    };
     HomepageComponent = __decorate([
         core_1.Component({
             selector: 'homepage',
