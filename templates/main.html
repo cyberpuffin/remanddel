@@ -9,12 +9,16 @@
     </span>
 </div>
 <!-- Button Menu -->
-<div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
+<div class="fixed-action-btn click-to-toggle horizontal" style="bottom: 45px; right: 24px;">
     <a class="btn-floating btn-large brown">
         <i class="large material-icons amber-text lighten-3">menu</i>
     </a>
     <ul>
-        <li><span class="btn-floating brown" (click)="setPage('home')"><i class="material-icons amber-text lighten-3">first_page</i></span></li>
-        <li><span class="btn-floating brown" (click)="setPage('about')"><i class="material-icons amber-text lighten-3">info</i></span></li>
+        <li>
+            <a class="waves-effect waves-light btn brown" (click)="setPage('home')">Home</a>
+        </li>
+        <li>
+            <a class="waves-effect waves-light btn brown" (click)="setPage('about')">About</a>
+        </li>
     </ul>
 </div>
