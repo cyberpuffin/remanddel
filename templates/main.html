@@ -1,0 +1,29 @@
+<div class="row container center-align">
+    <h1>Reminisce & Delight</h1>
+</div>
+
+<div class="row container">
+    <div [ngSwitch]="page" class="card-panel amber lighten-3 z-depth-3">
+        <!-- About page -->
+        <span *ngSwitchWhen="'about'">
+            <p class="flow-text brown-text">Cardigan vinyl flannel ugh. Waistcoat brooklyn heirloom franzen cardigan cray tousled kickstarter, knausgaard austin twee man bun swag mixtape. Freegan street art keytar, synth ennui single-origin coffee microdosing chartreuse squid green juice small batch everyday carry master cleanse. Waistcoat salvia bespoke, ennui pork belly asymmetrical neutra brooklyn street art paleo synth. Tote bag four loko truffaut wayfarers bicycle rights cronut. Celiac echo park skateboard pinterest, deep v butcher craft beer etsy gentrify banjo. Green juice trust fund tousled tumblr lo-fi whatever.</p>
+            <p class="flow-text brown-text">Fingerstache ugh pickled wayfarers vegan hella, offal fixie put a bird on it swag salvia selfies typewriter whatever narwhal. Man braid retro flexitarian, hoodie portland blue bottle tousled kinfolk man bun meh. Lomo ethical man braid vinyl readymade normcore schlitz, fanny pack brunch keffiyeh four dollar toast bushwick pork belly. Irony roof party ethical brooklyn cold-pressed. Art party portland squid chillwave pinterest banh mi. Mixtape slow-carb chartreuse, meggings pabst occupy authentic chillwave whatever selfies wolf keytar. Sriracha pork belly locavore, hashtag irony chillwave biodiesel.</p>
+        </span>
+        <!-- Home page -->
+        <span *ngSwitchDefault class="flow-text brown-text">
+            <p class="flow-text brown-text">Dreamcatcher actually keytar deep v church-key. Meditation celiac cardigan cred. Fingerstache brunch artisan cliche hammock, +1 four dollar toast art party gochujang kinfolk whatever franzen truffaut cronut salvia. Flannel biodiesel authentic intelligentsia knausgaard photo booth distillery austin. Portland meggings keytar, brunch knausgaard small batch blog skateboard readymade post-ironic four dollar toast fanny pack. Austin 8-bit photo booth direct trade vegan trust fund. Neutra intelligentsia butcher, readymade 90's street art gentrify lo-fi vice biodiesel pickled.</p>
+            <p class="flow-text brown-text">Kale chips marfa tattooed brooklyn, VHS lomo heirloom deep v 3 wolf moon vinyl. Crucifix everyday carry truffaut heirloom, aesthetic neutra waistcoat tofu +1 shabby chic offal salvia. Crucifix godard bicycle rights four dollar toast post-ironic. Try-hard tousled skateboard drinking vinegar paleo mustache fap, artisan offal kickstarter ugh flannel mixtape. Chia flexitarian cardigan trust fund, XOXO gochujang franzen swag 3 wolf moon mixtape YOLO slow-carb. Beard ethical gluten-free, celiac chicharrones authentic heirloom austin pour-over helvetica actually shabby chic marfa forage keffiyeh. Drinking vinegar letterpress blog locavore flexitarian, pitchfork single-origin coffee.</p>
+        </span>
+    </div>
+</div>
+
+<div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large brown">
+        <i class="large material-icons amber-text lighten-3">list</i>
+    </a>
+    <ul>
+        <li><a class="btn-floating brown" href="#" (click)="setPage('main')"><i class="material-icons amber-text lighten-3">loop</i></a></li>
+        <li><a class="btn-floating brown" href="#" (click)="setPage('about')"><i class="material-icons amber-text lighten-3">info_outline</i></a></li>
+        <!-- <li><a class="btn-floating brown" href="#" (click)="setPage('stuff')"><i class="material-icons amber-text lighten-3">comment</i></a></li> -->
+    </ul>
+</div>

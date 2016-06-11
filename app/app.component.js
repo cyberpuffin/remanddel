@@ -11,11 +11,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
+        this.page = 'home';
     }
+    AppComponent.prototype.setPage = function (newPage) {
+        this.page = newPage;
+    };
     AppComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: '<h1>Reminisce & Delight</h1>'
+            selector: 'main',
+            templateUrl: 'templates/main.html'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

@@ -1,7 +1,12 @@
 import {Component} from '@angular/core';
 
 @Component({
-    selector: 'my-app',
-    template: '<h1>Reminisce & Delight</h1>'
+    selector: 'main',
+    templateUrl: 'templates/main.html'
 })
-export class AppComponent { }
+export class AppComponent {
+  page = 'home';
+  setPage(newPage: string){
+    this.page = newPage;
+  }
+}
