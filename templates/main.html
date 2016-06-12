@@ -28,22 +28,37 @@
     </div>
 </div>
 <!-- Button Menu -->
-<div class="fixed-action-btn click-to-toggle horizontal" style="bottom: 45px; right: 24px;">
+<!-- Small mobile icon buttons -->
+<div class="fixed-action-btn click-to-toggle hide-on-med-and-up" style="bottom: 45px; right: 24px;">
     <a class="btn-floating btn-large brown">
         <i class="large material-icons white-text">menu</i>
     </a>
     <ul>
         <li>
-            <a class="waves-effect waves-light btn brown hide-on-small-only" (click)="setPage('home')">Home</a>
-            <a class="btn-floating brown hide-on-med-and-up" (click)="setPage('home')"><i class="material-icons">home</i></a>
+            <a class="btn-floating brown" (click)="setPage('home')"><i class="material-icons">home</i></a>
         </li>
         <li>
-            <a class="waves-effect waves-light btn brown hide-on-small-only" (click)="setPage('about')">About</a>
-            <a class="btn-floating brown hide-on-med-and-up" (click)="setPage('about')"><i class="material-icons">info</i></a>
+            <a class="btn-floating brown" (click)="setPage('about')"><i class="material-icons">info</i></a>
         </li>
         <li>
-            <a class="waves-effect waves-light btn brown hide-on-small-only" target="_blank" href="https://www.etsy.com/shop/reminisceanddelight">Shop</a>
-            <a class="btn-floating brown hide-on-med-and-up" target="_blank" href="https://www.etsy.com/shop/reminisceanddelight"><i class="material-icons">shop</i></a>
+            <a class="btn-floating brown" target="_blank" href="https://www.etsy.com/shop/reminisceanddelight"><i class="material-icons">shop</i></a>
+        </li>
+    </ul>
+</div>
+<!-- Large animated desktop buttons -->
+<div class="fixed-action-btn click-to-toggle horizontal hide-on-small-only" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large brown">
+        <i class="large material-icons white-text">menu</i>
+    </a>
+    <ul>
+        <li>
+            <a class="waves-effect waves-light btn brown" (click)="setPage('home')">Home</a>
+        </li>
+        <li>
+            <a class="waves-effect waves-light btn brown" (click)="setPage('about')">About</a>
+        </li>
+        <li>
+            <a class="waves-effect waves-light btn brown" target="_blank" href="https://www.etsy.com/shop/reminisceanddelight">Shop</a>
         </li>
     </ul>
 </div>
