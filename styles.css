@@ -1,6 +1,8 @@
 body {
   background: url('images/grey.gif') top right no-repeat;
   background-attachment: fixed;
+  width: 100%;
+  height: 100%;
 }
 
 .solid {
