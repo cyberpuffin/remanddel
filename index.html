@@ -16,6 +16,9 @@
     <!-- jQuery (required for Materialize) -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
+    <!-- lazy load plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+
     <!-- Moar JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -28,12 +31,17 @@
     </script>
   </head>
 
-  <body>
+  <body class="lazy" data-original="images/bg-body.jpg">
       <!-- Header -->
       <div class="row container center-align">
           <h1 class="brown-text cursive">Reminisce & Delight</h1>
       </div>
       <!-- Main Section -->
       <main></main>
+      <script>
+        $("body.lazy").lazyload({
+          effect : "fadeIn"
+        });
+      </script>
   </body>
 </html>
