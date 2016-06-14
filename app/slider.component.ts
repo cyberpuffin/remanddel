@@ -2,6 +2,8 @@ import {Component, AfterViewInit} from '@angular/core';
 
 import {Slider} from './slider';
 
+declare var $: any;
+
 @Component({
     selector: 'slider',
     templateUrl: 'templates/slider.html'
