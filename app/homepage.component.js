@@ -9,16 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var slider_component_1 = require('./slider.component');
 var HomepageComponent = (function () {
     function HomepageComponent() {
     }
-    HomepageComponent.prototype.ngAfterViewInit = function () {
-        $('.slider').slider({ full_width: true });
-    };
     HomepageComponent = __decorate([
         core_1.Component({
             selector: 'homepage',
             templateUrl: 'templates/homepage.html',
+            directives: [slider_component_1.SliderComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], HomepageComponent);

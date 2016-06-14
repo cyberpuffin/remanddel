@@ -1,12 +1,10 @@
-import {Component, AfterViewInit} from '@angular/core';
+import {Component} from '@angular/core';
+import {SliderComponent} from './slider.component';
 
 @Component({
     selector: 'homepage',
     templateUrl: 'templates/homepage.html',
+    directives: [SliderComponent]
 })
 
-export class HomepageComponent implements AfterViewInit{
-  ngAfterViewInit() {
-    $('.slider').slider({full_width: true});
-  }
-}
+export class HomepageComponent{ }
