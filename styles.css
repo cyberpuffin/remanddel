@@ -24,3 +24,8 @@ body {
 .slider .indicators .indicator-item {
   background-color: #FFFFFF !important;
 }
+
+#logo_image {
+  height: 200px;
+  width: 286px;
+}
